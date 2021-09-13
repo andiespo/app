@@ -1,9 +1,9 @@
-const Nav = () => 
+const NavBar = () => 
        
-                <nav>
+                <NavBar>
                     <a href="#">link1</a>
                     <a href="#">link2</a>
-                </nav>
+                </NavBar>
         
 
-export default Nav
+export default NavBar
