@@ -1,8 +1,8 @@
 import NavBar from "./NavBar"
 
 const App = () => 
-        <header className="test">
-                <h1>Bienvenidos a ANDI APP</h1>
+        <header className="container-fluid">
+                <h1>Bienvenidos a The Healthy APP</h1>
                 <NavBar/>
         </header>
 
