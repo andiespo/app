@@ -1,9 +1,16 @@
-import NavBar from "./Components/NavBar"
 
-const App = () => 
-        <header className="container-fluid">
-                <h1>Bienvenidos a The Healthy APP</h1>
-                <NavBar/>
-        </header>
+import Header from "./Components/Header"
 
+const App = () => {
+
+        return (
+        <>
+        <Header id ="main-header" titulo= "The Healthy APP" Subtitulo= "Mi E-commerce" Edad= {32} />
+        <ItemListContainer/>
+        <footer>
+        <p>Copyright & 2021</p>
+        </footer>
+        </>
+        )
+}
 export default App
