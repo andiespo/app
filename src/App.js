@@ -2,7 +2,6 @@ import Header from "./Components/Header"
 
 const App = () => {
 
-        const [contador,setContador] = useState()
         let titulo = "Mi E-commerce"
         
         return (
