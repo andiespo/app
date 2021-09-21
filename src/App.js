@@ -1,5 +1,3 @@
-
-import {useState,useEffect} from "react"
 import Header from "./Components/Header"
 
 const App = () => {
