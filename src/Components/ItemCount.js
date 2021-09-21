@@ -1,4 +1,4 @@
-{useState} from "react"
+import {useState} from "react"
 const ItemCount = ({stock, initial, onAdd}) => {
 
     const [contador,setContador] = useState(0)
