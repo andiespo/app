@@ -3,12 +3,12 @@ import ItemListContainer from "./ItemListContainer"
 import ItemCounter from "./ItemCount"
 import Footer from "./Footer"
 
-const Header = ({titulo, subtitulo, edad, id }) => {
+const Header = ({titulo, subtitulo, id }) => {
 
     return (
         <header className="test" id={"id"} >
             <h1>{titulo}</h1>
-            <p>{Edad}</p>
+            <p></p>
                 <NavBar/>
         </header>
     )
