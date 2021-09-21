@@ -1,4 +1,4 @@
-const ItemCounter = ({titulo}) => {
+const ItemCounter = ({contador}) => {
 
     const [contador,setContador] = useState(0)
     let titulo = "Mi E-commerce"
