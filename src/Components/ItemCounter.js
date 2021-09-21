@@ -7,8 +7,8 @@ const ItemCounter = ({titulo}) => {
         <div className="ItemCounter" id={"id"} >
             <h1>{titulo}</h1>
             <p>Contador:{contador}</p>
-            <button onClick= {()=> {onAdd(setContador(contador+1))}}> aumentar contador  </button>
-            <contador onAdd ={}/>
+            <button onClick= {()=> {setContador(contador+1)}}> aumentar contador  </button>
+            <contador onAdd ={()=> {}}/>
         </div>
     )
 }
