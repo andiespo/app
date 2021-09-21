@@ -10,7 +10,7 @@ const App = () => {
         return (
         <>
         <Header id ="main-header" titulo= "The Healthy APP" Subtitulo= "Mi E-commerce" Edad= {32} />
-        
+        <ItemCount/>
         <ItemListContainer/>
         <Footer/>
         </>
