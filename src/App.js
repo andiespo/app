@@ -1,5 +1,7 @@
 import Header from "./Components/Header"
-
+import Itemcount from "./Components/ItemCount"
+import ItemListContainer from "./Components/ItemListContainer"
+import Footer from "./Components/Footer"
 const App = () => {
 
         let titulo = "Mi E-commerce"
