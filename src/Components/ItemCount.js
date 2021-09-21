@@ -1,3 +1,4 @@
+{useState} from "react"
 const ItemCount = ({stock, initial, onAdd}) => {
 
     const [contador,setContador] = useState(0)
@@ -14,4 +15,4 @@ const ItemCount = ({stock, initial, onAdd}) => {
 }
 
 
-export default ItemCounter
+export default ItemCount
