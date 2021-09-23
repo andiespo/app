@@ -17,13 +17,12 @@ const ItemListContainer = () => {
                resolver(productos) 
             }, 2000);
         })
-    })
 
     pedido 
     .then (resultado =>{
         console.log(productos)
-    }
-) 
+    })
+}) 
 
     return (
         <div className="Item" id={"id"} >
