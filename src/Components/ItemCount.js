@@ -1,4 +1,5 @@
 import {useState} from "react"
+import ItemList from "./ItemList"
 const ItemCount = ({stock, initial, onAdd}) => {
 
     const [contador,setContador] = useState(0)
@@ -13,6 +14,5 @@ const ItemCount = ({stock, initial, onAdd}) => {
         </div>
     )
 }
-
 
 export default ItemCount
