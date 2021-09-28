@@ -2,6 +2,7 @@ import {useState,useEffect} from "react"
 import ItemCount from "./ItemCount"
 import ItemList from "./ItemList"
 import ItemListContainer from "./ItemListContainer"
+import ItemDetail from "./ItemDetail"
 
 const productos = [
     {id:1,titulo: "Producto 1"},
@@ -13,7 +14,7 @@ const ItemDetailContainer = () => {
 
     useEffect= (() => {
 
-      const pedido=  new Promise ((resolver)=> {
+        const pedido=  new Promise ((resolver)=> {
             setTimeout(() => {
                resolver(productos) 
             }, 2000);
@@ -24,6 +25,7 @@ const ItemDetailContainer = () => {
         console.log(productos)
     })
 }) 
+
 
     return (
         <div className="Item" id={"id"} >
