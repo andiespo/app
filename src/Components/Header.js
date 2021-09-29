@@ -1,6 +1,4 @@
 import NavBar from "./NavBar"
-import ItemListContainer from "./ItemListContainer"
-import ItemDetailContainer from "./ItemDetailContainer"
 import Footer from "./Footer"
 
 const Header = ({titulo, subtitulo, id }) => {
