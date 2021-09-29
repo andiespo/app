@@ -1,33 +1,30 @@
-import CartWidget from "./CartWidget"
-const NavBar = () => 
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-<div class="row">
-    <div class="col-lg-12 col-xs-12">
-        <NavBar class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-          <a class="navbar-brand" href="#">The Healthy APP</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Productos </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Clientes</a>
-              </li>
-              <li class="nav-item">
-                <a class="material-icons" href="#">shopping_cart</a>
-              </li>
-            </ul>
-          </div>
-        </NavBar>
-        <CartWidget/>
-    </div>
-</div>
-        
+export const NavBar = () => {
 
+    return (
+      <div className="row">
+      <div className="col-lg-12 col-xs-12">
+          <NavBar className="navbar navbar-expand-md navbar-light fixed-top bg-light">
+            <NavLink className="navbar-brand" to="/">The Healthy APP</NavLink>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/cat1">Categoria1</NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/cat2">Categoria2</NavLink>
+                </li>
+              </ul>
+            </div>
+          </NavBar>
+      </div>
+  </div>
+          
+    )
+}
 export default NavBar

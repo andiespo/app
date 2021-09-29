@@ -1,14 +1,14 @@
 import Header from "./Components/Header"
 import Footer from "./Components/Footer"
-const App = () => {
+import "./App.css";
+import { AppRoutes } from "./Components/routes/Approutes";
 
-        let titulo = "Mi E-commerce"
+function App () {
         
         return (
-        <>
-        <Header id ="main-header" titulo= "The Healthy APP" Subtitulo= "Mi E-commerce"/>
-        <Footer/>
-        </>
+         <div className="App">
+            <AppRoutes/>
+         </div>
         )
 }
 export default App
