@@ -4,10 +4,10 @@ import {
     Switch,
     Route,
   } from "react-router-dom";
-import { Categoria1 } from "../Fruta/Categoria1";
-import { Categoria2 } from "../Verdura/Categoria2";
+import { Fruta } from "../Fruta/Fruta";
 import {NavBar} from "../NavBar"
 import {Footer} from "../Footer"
+import { Verdura } from "../Verdura/Verdura";
 
 export const AppRoutes = () => {
 
@@ -16,9 +16,9 @@ export const AppRoutes = () => {
             <Router>
                 <NavBar/>
                 <Switch>
-                    <Route path ="/Cat1" component={Categoria1}/>
-                    <Route path ="/Cat2" component={Categoria2}/>
-                    <Route path ="/"/>
+                    <Route path ="/Fruta" component={Fruta}/>
+                    <Route path ="/Verdura" component={Verdura}/>
+                    <Route path ="/prodcuto/:id"/>
                 </Switch>
                 <Footer/>
             </Router>
