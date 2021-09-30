@@ -1,7 +1,7 @@
 import { producto } from "../../Data/Data"
 
 
-export const GetProdbyCat = (Categoria) => {
+export const GetProdbyNombre = (CaNombre) => {
     return producto.filter (producto => producto.nombre === nombre);
 }
 

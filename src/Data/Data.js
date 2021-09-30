@@ -9,6 +9,11 @@ export const producto = [
 'temporada': 'Verano',
 'categoria': 'Fruta'
 },
+{'id': 'Arandanos',
+'nombre': 'Blueberry',
+'temporada': 'Verano',
+'categoria': 'Fruta'
+},
 {'id': 'Palta',
 'nombre': 'Hass',
 'temporada': 'Verano',
@@ -20,7 +25,7 @@ export const producto = [
 'categoria': 'Verdura'
 },
 {'id': 'Puerro',
-'nombre': 'Puerrodetierra',
+'nombre': 'Leek',
 'temporada': 'Invierno',
 'categoria': 'Verdura'
 },
