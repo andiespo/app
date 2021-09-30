@@ -4,8 +4,8 @@ import {
     Switch,
     Route,
   } from "react-router-dom";
-import { Categoria1 } from "../Categoria1/Categoria1";
-import { Categoria2 } from "../Categoria2/Categoria2";
+import { Categoria1 } from "../Fruta/Categoria1";
+import { Categoria2 } from "../Verdura/Categoria2";
 import {NavBar} from "../NavBar"
 import {Footer} from "../Footer"
 

@@ -1,14 +1,20 @@
 import React from "react";
-import { GetProdbyNombre } from "../utils/GetProdbyNombre";
+import { Card } from "../Card/Card";
+import { GetProdbyCat } from "../utils/GetProdbyCat";
+import './ProductoList.css';
 
-export const ProductoList = (nombre) => {
+export const ProductoList = (categoria) => {
 
-    const producto = GetProdbyNombre(nombre);
+    const producto = GetProdbyCat(categoria);
     return (
-        <div className="container mt-3">
+        <div className="producto-container">
             <ul>
                 {
-                    producto.map (producto=> <li>{producto.nombre}</li>)
+                    producto.map (producto=> <Card 
+                        key={producto.id}
+                        id={producto.id} 
+                        temporada={producto.temporada} 
+                        categoria ={producto.categoria}/>)
                 }
             </ul>
         </div>
