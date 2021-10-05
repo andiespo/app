@@ -8,6 +8,7 @@ import { Fruta } from "../Fruta/Fruta";
 import {NavBar} from "../NavBar"
 import {Footer} from "../Footer"
 import { Verdura } from "../Verdura/Verdura";
+import { Card } from "../Card/Card";
 
 export const AppRoutes = () => {
 
@@ -16,9 +17,11 @@ export const AppRoutes = () => {
             <Router>
                 <NavBar/>
                 <Switch>
-                    <Route path ="/Fruta" component={Fruta}/>
-                    <Route path ="/Verdura" component={Verdura}/>
-                    <Route path ="/prodcuto/:id"/>
+                    <Route exact path ="/Fruta" component={Fruta}/>
+                    <Route exact path ="/Verdura" component={Verdura}/>
+                    <Route exact path ="/producto/:id"/>
+                    <Route exact path ="/card" component= {Card}/>
+                    <Route exact path ="/categoria/:id" component={ItemDetailContainer}/>
                 </Switch>
                 <Footer/>
             </Router>
