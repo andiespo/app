@@ -21,7 +21,9 @@ export const AppRoutes = () => {
                     <Route exact path ="/Verdura" component={Verdura}/>
                     <Route exact path ="/producto/:id"/>
                     <Route exact path ="/card" component= {Card}/>
+                    <Route exact path ="/categoria/:id" component={ItemListContainer}/>
                     <Route exact path ="/categoria/:id" component={ItemDetailContainer}/>
+
                 </Switch>
                 <Footer/>
             </Router>

@@ -1,18 +1,14 @@
 import ItemDetailContainer from "./ItemDetailContainer";
 
-const pedido=  fetch ('https://jsonplaceholder.typicode.com/users')
+const ItemDetail=  ({producto}) => {
+    return (
+        <div>
+                <h2>{producto.titulo}</h2>
+                <p>producto.descripcion</p>
+        </div>
+    )
+}
     
-
-    pedido 
-    .then (respuesta =>{
-        return respuesta.json()
-    })
-    .then (respuesta =>{
-        console.log(respuesta)
-    })
-    .catch (error =>{
-        console.log(error)
-    })
 
 
 export default ItemDetail
