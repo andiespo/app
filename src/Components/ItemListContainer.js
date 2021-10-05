@@ -1,37 +1,57 @@
 import {useState,useEffect} from "react"
+import { useParams } from "react-router"
 import ItemCount from "./ItemCount"
 import ItemList from "./ItemList"
 
-const productos = [
-    {id:1,titulo: "Producto 1"},
-    {id:2,titulo: "Producto 2"}
+const producto = [
+    {'id': 'Manzana', 'Nombre': 'GrandSmith','temporada': 'Invierno','categoria': 'Fruta'},
+    {'id': 'Pera','nombre': 'Williams','temporada': 'Verano', 'categoria': 'Fruta'},
+    {'id': 'Arandanos','nombre': 'Blueberry','temporada': 'Verano','categoria': 'Fruta'},
+    {'id': 'Palta','nombre': 'Hass','temporada': 'Verano','categoria': 'Verdura'},
+    {'id': 'Lechuga','nombre': 'LechugaHidroponia','temporada': 'Verano','categoria': 'Verdura'},
+    {'id': 'Puerro','nombre': 'Leek','temporada': 'Invierno','categoria': 'Verdura'},
 ]
+
 const ItemListContainer = () => {
 
-    const [productos,setProductos] = useState ([])
+    const [producto,setProducto] = useState ([])
+    const {id} = useParams
 
     useEffect= (() => {
 
       const pedido=  new Promise ((resolver)=> {
             setTimeout(() => {
-               resolver(productos) 
+               resolver(producto) 
             }, 2000);
         })
-
+         
+        if (id){
+            pedido.then(data =>{
+                setProducto(data.filter(item=> item.categoria ===id))
+            })
+        }else{
+           
     pedido 
     .then (resultado =>{
-        console.log(productos)
-    })
+        console.log(producto)
+        })
+    }
 }) 
-
+    if (producto.lenght>0){
     return (
         <div className="Item" id={"id"} >
             <h1></h1>
             <p></p>
-            <ItemList productos={productos}/>
-            <ItemCount stock= {10} initial= {1} onAdd={()=> {}}/>
+            <ItemList producto={producto}/>
+
         </div>
-    )
+    );
+    else{
+        return( 
+        <p>cargando...</p>
+        
+        )
+    }
 }
 
 
