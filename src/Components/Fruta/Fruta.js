@@ -7,7 +7,7 @@ export const Fruta = () => {
         <div className="container mt-3">
             <h1>Fruta</h1>
             <hr />
-            <ProductoList categoria="Fruta" />
+            <ProductoList categoria="Fruta"/>
         </div>
     )
 }

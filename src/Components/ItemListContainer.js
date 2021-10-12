@@ -27,13 +27,13 @@ const ItemListContainer = () => {
          
         if (id){
             pedido.then(data =>{
-                setProducto(data.filter(item=> item.categoria ===id))
+                setProducto(data.filter(item=> item.categoria ==id))
             })
         }else{
            
     pedido 
     .then (resultado =>{
-        console.log(producto)
+        setProducto(resultado)
         })
     }
 }) 
@@ -46,7 +46,7 @@ const ItemListContainer = () => {
 
         </div>
     );
-    else{
+    } else {
         return( 
         <p>cargando...</p>
         
