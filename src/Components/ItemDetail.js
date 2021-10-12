@@ -11,11 +11,18 @@ const ItemDetail=  () => {
 
     const [setCarrito] = useContext(context);
 
+    const addItem= (cantidad) => {
+        const itemconCantidad = {...prev,cantidad};
+        setCarrito(prev =>{
+            return[]
+        })
+    }
+
     return (
         <div>
                 <h2>{producto.titulo}</h2>
                 <p>producto.descripcion</p>
-                <ItemCount></ItemCount>
+                <ItemCount onAdd={addItem}></ItemCount>
         </div>
     )
 }
